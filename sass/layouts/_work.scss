@@ -1,0 +1,40 @@
+
+
+
+.work__list {
+
+    --items: 3;
+}
+
+.work__item {
+
+    position: relative;
+
+}
+
+.paragraph-title {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.work__text {
+
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--header-color);
+    background-color: var(--background-img-color);
+
+}

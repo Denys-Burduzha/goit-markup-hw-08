@@ -1,0 +1,32 @@
+
+
+/* icon-style */
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media-icon {
+    fill: currentColor;
+}
+
+/* client__list */
+
+.client__list {
+    display: flex;
+    justify-content: center;
+    color: var(--icon-buckground-color);
+}
+
+.client__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client__icon {
+    fill: currentColor;
+}
