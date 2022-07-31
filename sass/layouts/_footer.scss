@@ -1,13 +1,59 @@
 
 
+
+
+
+
+
 .section-footer {
-    display: flex;
-    align-items: baseline;
+    
+
+    // @media screen and (max-width: 1199px) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+         @media screen and (min-width:768px) {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+             align-items: baseline;
+         }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .container-section-footer {
-    margin-right: 70px;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+    
 }
+
+
+.strong-title-list {
+    
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
 
 .footer {
     background-color: var(--footer-background-color);
@@ -15,9 +61,30 @@
     padding-bottom: 60px;
 }
 
+.footer-studio {
+    color: var(--header-color);
+}
+
+.logo-footer {
+    padding-top: 39px;
+}
+
 .address {
-    display: block;
-    margin-top: 20px;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-top: 20px;
+    }
+
+    
 }
 
 .address-linc {
@@ -47,10 +114,20 @@
 }
 
 .strong-title {
-    margin-right: 93px;
-
+    
+    margin-right: auto;
+    margin-left: auto;
+    
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .strong-title-link {

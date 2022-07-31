@@ -1,17 +1,59 @@
 
 // form
 
-.footer-input {
-    margin-right: 12px;
 
-    display: flex;
-    flex-direction: column;
+.btn-submit {
+    display: block;
+    
+    @media screen and (max-width: 1199px) {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {  
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+}
+
+
+.footer-input {
+    
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;     
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+        flex-direction: column;
+        
+    }
+    
 }
 
 .footer-input-title {
-    margin-right: 10px;
-    margin-bottom: 20px;
-
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -19,25 +61,45 @@
     text-transform: uppercase;
 
     color: var(--header-color);
+
+    @media screen and (min-width: 1200px) {
+       
+    }
 }
 
 .input-title {
+    margin-top: 20px;
+    width: 100%;
     outline: transparent;
 
     border-radius: 4px;
     padding: 15px 16px;
-    width: 358px;
+    
     height: 50px;
 
     color: var(--text-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: var(--footer-background-color);
+
+    @media screen and (min-width: 768px) {
+        width: 450px;     
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
-.btn-submit {
-    display: flex;
-    align-items: flex-end;
+
+
+.footer-button {
+    width: 200px;
+    border-radius: 4px;
+    // border: 1px solid transparent;
+    padding: 10px 28px 10px 29px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .telegram-icon {

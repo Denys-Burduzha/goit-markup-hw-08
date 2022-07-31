@@ -15,43 +15,55 @@
 </head>
 <body>
     <!--header-->
-    <header class=" header">
+
+    <header class="header">
         <div class="container container-nav">
             <nav class=" nav ">
                 <a href="./index.html " class="logo logo-header ">Web<span class="studio">Studio</span></a>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html " class="link">Студия</a></li>
+                    <li class="item  "><a href="./index.html " class="link ">Студия</a></li>
                     <li class="item item-studio"><a href="./portfolio.html" class="link current">Портфолио</a></li>
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
+    
+            <button class="mobile-menu-btn" type="button" data-menu-button>
+                <svg class="mobile-menu-ikon" width="24" height="16">
+                    <use class="mobile-menu-burger" href="./images/svg/icons.svg#icon-mobil-menu"></use>
+                    <use class="mobile-menu-close" href="./images/svg/icons.svg#icon-close-menu"></use>
+    
+                </svg>
+            </button>
+    
             <div class="site-nav ">
                 <ul class="auth-nav list ">
                     <li class="item">
-                        <a href="mailto:info@devstudio.com" class="link item-link">
+                        <a href="mailto:info@devstudio.com" class=" item-link ">
                             <svg class="auth-nav-icon" width="16" height="12">
                                 <use href="./images/svg/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
-        
+    
                         </a>
                     </li>
                     <li class="item">
-                        <a href="tel:+380961111111" class="link item-link ">
-                            <svg class="auth-nav-icon" width="10" height="16">
+                        <a href="tel:+380961111111" class=" item-link ">
+                            <svg class="auth-nav-tel" width="10" height="16">
                                 <use href="./images/svg/icons.svg#icon-vector"></use>
                             </svg>
                             +38 096 111 11 11
-        
+    
                         </a>
                     </li>
                 </ul>
             </div>
-        
+    
         </div>
     </header>
+
     <!--main-content-->
-    <main class="section">
+
+    <main class="section-main">
         <div class="container">
             <section class="main">
                 <h1 class="visually-hidden">Projects</h1>
@@ -67,7 +79,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img class="" src="./images/im3/img.jpg" alt=" на мониторе три фотографии, две девушки один мужчина" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img1lg.jpg 1x, ./images/portfolio/img1lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img1md.jpg 1x, ./images/portfolio/img1md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img1sm.jpg 1x, ./images/portfolio/img1sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img class="" src="./images/portfolio/img1sm.jpg" alt=" на мониторе три фотографии, две девушки один мужчина" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -88,7 +114,21 @@
 
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(1).jpg" alt=" два баскетболиста с мячом" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img2lg.jpg 1x, ./images/portfolio/img2lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img2md.jpg 1x, ./images/portfolio/img2md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img2sm.jpg 1x, ./images/portfolio/img2sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img2sm.jpg" alt=" два баскетболиста с мячом" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -109,7 +149,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(2).jpg" alt=" логотип рыбного ресторана" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img3lg.jpg 1x, ./images/portfolio/img3lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img3md.jpg 1x, ./images/portfolio/img3md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img3sm.jpg 1x, ./images/portfolio/img3sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img3sm.jpg" alt=" логотип рыбного ресторана" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -130,7 +184,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(3).jpg" alt=" наушники" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img4lg.jpg 1x, ./images/portfolio/img4lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img4md.jpg 1x, ./images/portfolio/img4md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img4sm.jpg 1x, ./images/portfolio/img4sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img4sm.jpg" alt=" наушники" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -150,7 +218,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(4).jpg" alt=" две коробки одна белая вторая бежевая" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img5lg.jpg 1x, ./images/portfolio/img5lg.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img5md.jpg 1x, ./images/portfolio/img5md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img5sm.jpg 1x, ./images/portfolio/img5sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img5sm.jpg" alt=" две коробки одна белая вторая бежевая" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -171,7 +253,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(5).jpg" alt=" на мониторе отrрыт Веб-сайт" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img6lg.jpg 1x, ./images/portfolio/img6lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img6md.jpg 1x, ./images/portfolio/img6md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img6sm.jpg 1x, ./images/portfolio/img6sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img6sm.jpg" alt=" на мониторе отrрыт Веб-сайт" width="370">
+                                </picture>
+                                
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -192,7 +288,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(6).jpg" alt=" журнал с двумя картинками" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img7lg.jpg 1x, ./images/portfolio/img7lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img7md.jpg 1x, ./images/portfolio/img7md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img7sm.jpg 1x, ./images/portfolio/img7sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img7sm.jpg" alt=" журнал с двумя картинками" width="370">
+                                </picture>
+                                
                                 <div class="portfolio-overlau">
                                     <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                         с разным уровнем функционала и сервисов. Все это позволит
@@ -213,7 +323,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(7).jpg" alt=" этикетка с логотипом" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img8lg.jpg 1x, ./images/portfolio/img8lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img8md.jpg 1x, ./images/portfolio/img8md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img8sm.jpg 1x, ./images/portfolio/img8sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img8sm.jpg" alt=" этикетка с логотипом" width="370">
+                                </picture>
+                                
                                 <div class="portfolio-overlau">
                                     <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                         с разным уровнем функционала и сервисов. Все это позволит
@@ -234,7 +358,21 @@
                     <li class="card-set-item shadow">
                         <a href="">
                             <div class="shadow-overlau">
-                                <img src="./images/im3/img(8).jpg" alt=" в мониторе человек с планшетом" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                     srcset="./images/portfolio/img9lg.jpg 1x, ./images/portfolio/img9lg@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(min-width: 768px)"
+                                     srcset="./images/portfolio/img9md.jpg 1x, ./images/portfolio/img9md@2x.jpg 2x"
+                                        type="image/jpg" />
+                                    <source media="(max-width: 767px)"
+                                     srcset="./images/portfolio/img9sm.jpg 1x, ./images/portfolio/img9sm@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img src="./images/portfolio/img9sm.jpg" alt=" в мониторе человек с планшетом" width="370">
+                                </picture>
+                               
                                     <div class="portfolio-overlau">
                                         <p class="portfolio-desc"> Ресурс предлагает комплексные предложения
                                             с разным уровнем функционала и сервисов. Все это позволит
@@ -260,6 +398,7 @@
        
     </main>
     <!--footer-->
+
     <footer class="section footer">
         <div class="container section-footer ">
             <div class="container-section-footer">
@@ -338,5 +477,6 @@
         </div>
     
     </footer>
+
 </body>
 </html>

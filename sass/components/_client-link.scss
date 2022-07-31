@@ -6,13 +6,12 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     border-radius: 4px;
     border: 1px solid var(--icon-buckground-color);
     color: var(--icon-buckground-color);
-
     transition: color var(--anim-aiow), border var(--anim-aiow);
 
     &:hover,
@@ -24,5 +23,27 @@
         border-radius: 4px;
     }
 
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+
 }
 
+.client__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    color: var(--icon-buckground-color);
+    gap: 30px;
+    
+}
+
+
+
+.client__icon {
+    fill: currentColor;
+}

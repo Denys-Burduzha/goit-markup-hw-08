@@ -2,8 +2,49 @@
 
 
 .our-team {
-    background-color: var(--team-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background-color: var(--team-background-color);
+    }   
 }
+
+.team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        
+        font-size: 36px;
+        line-height: 1.14;
+        text-align: center;
+        margin-bottom: 50px;
+        }
+}
+
+
+.team-list {
+    --items: 1;
+   
+    
+        @media screen and (min-width: 768px) {
+            --items: 2;
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --items: 4;
+           
+        }
+} 
+
 
 .team-list__name {
     padding: 30px 0;

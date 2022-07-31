@@ -53,11 +53,29 @@
 }
 
 .label-title-terms {
+
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--text-color);
+        font-size: 12px;
+        line-height: 1.16;
+        color: var(--text-color);
+        
+    
+        @media screen and (min-width: 1200px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        
+    }
 }
+
+.terms {
+    
+    text-decoration-line: underline;
+    color: var(--accent-color);
+
+}
+
+
 
 .input {
     outline: transparent;
@@ -72,10 +90,7 @@
     padding: 12px 42px;
 }
 
-.terms {
-    text-decoration-line: underline;
-    color: var(--accent-color);
-}
+
 
 .input:focus {
     border: 1px solid var(--accent-color);
